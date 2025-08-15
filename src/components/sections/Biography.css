@@ -1,0 +1,244 @@
+.biography-section {
+  min-height: 100vh;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biography-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: var(--text-dark);
+  margin: 0 auto 50px;
+}
+
+.bio-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-details,
+.bio-additional {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.bio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  border: 2px solid var(--border-color);
+  background: white;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  border-radius: 8px;
+}
+
+.bio-card.wide {
+  min-width: 250px;
+}
+
+.bio-card:hover {
+  border-color: var(--accent-yellow);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bio-label {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.bio-value {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Skills Section */
+.skills-section {
+  text-align: left;
+  margin-top: 80px;
+}
+
+.skills-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Flip Card Animation for All Screen Sizes */
+.skill-card {
+  perspective: 1000px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-inner {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.skill-card:hover .skill-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-front,
+.skill-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(111, 168, 24, 0.603);
+  color: white;
+}
+
+.skill-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(148, 212, 53, 0.815);
+}
+
+.skill-bar {
+  background: #333;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+/* FIXED Progress Bar Style */
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff, #5c5a5794, #ffffff);
+  background-size: 200% 100%;
+  animation: shine 3s linear infinite;
+  transition: width 1.5s ease-in-out;
+  min-width: 0; /* Prevent disappearing when width is small */
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skill-percentage {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.skill-back ul {
+  padding-left: 20px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .biography-content {
+    padding: 40px 20px;
+  }
+
+  .bio-details,
+  .bio-additional {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Extra Small Screens (phones) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px; /* shrink title */
+    letter-spacing: 1px;
+  }
+
+  .title-underline {
+    width: 60px;
+    margin-bottom: 30px;
+  }
+
+  .bio-description {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  .bio-card {
+    min-width: 100%;
+    padding: 15px 20px;
+  }
+
+  .skills-section h2 {
+    font-size: 24px;
+  }
+
+  .skill-inner {
+    height: 140px;
+  }
+
+  .skill-front,
+  .skill-back {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

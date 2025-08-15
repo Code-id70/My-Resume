@@ -1,0 +1,375 @@
+.news-section {
+  min-height: 100vh;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 60px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: var(--text-dark);
+  margin: 0 auto 40px;
+}
+
+.news-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.article-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.article-card:hover {
+  border-color: var(--accent-yellow);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.article-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-image img {
+  transform: scale(1.05);
+}
+
+.article-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--accent-yellow);
+  color: var(--text-dark);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.article-content {
+  padding: 25px;
+}
+
+.article-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.article-excerpt {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  color: var(--accent-yellow);
+  transform: translateX(5px);
+}
+
+.newsletter-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.newsletter-section p {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  border-right: none;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--accent-yellow);
+}
+
+.newsletter-btn {
+  background: var(--accent-yellow);
+  color: var(--text-dark);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.newsletter-btn:hover {
+  background: var(--text-dark);
+  color: white;
+}
+
+/* Modal Styles */
+.article-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-dark);
+  z-index: 10001;
+}
+
+.modal-body {
+  position: relative;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.modal-article-content {
+  padding: 40px;
+}
+
+.modal-article-content .article-category {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.modal-article-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.article-full-content {
+  margin-top: 30px;
+}
+
+.article-full-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.article-full-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 30px 0 15px;
+}
+
+.article-full-content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.article-full-content li {
+  color: var(--text-light);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .news-content {
+    padding: 40px 20px;
+  }
+  
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter-input {
+    border-radius: 4px;
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .newsletter-btn {
+    border-radius: 4px;
+  }
+  
+  .modal-article-content {
+    padding: 20px;
+  }
+}
+
+/* Extra Small Screens (phones) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .title-underline {
+    width: 60px;
+    margin-bottom: 30px;
+  }
+
+  .news-intro {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .article-title {
+    font-size: 18px;
+  }
+
+  .article-excerpt {
+    font-size: 13px;
+  }
+
+  .newsletter-section h2 {
+    font-size: 24px;
+  }
+
+  .newsletter-section p {
+    font-size: 14px;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
