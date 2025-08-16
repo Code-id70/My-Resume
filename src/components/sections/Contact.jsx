@@ -15,7 +15,7 @@ const Contact = () => {
 
   const contactInfo = {
     address: "South Africa, Gauteng, Pretoria",
-    phone: "+27 68 257 2927",
+    phone: "+27 82 085 0042",
     email: "thagwanawm88@gmail.com"
   };
 
