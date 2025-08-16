@@ -30,13 +30,6 @@ const Home = () => {
               className="profile-image"
             />
           </div>
-
-          <a href ="/W THAGWANA CV.pdf" download>
-          <button className="download-cv-btn">
-            <Download size={20} />
-            DOWNLOAD CV
-          </button>
-          </a>
         </div>
 
         {/* Right Side - Title and Description */}
