@@ -4,17 +4,14 @@ const certificates = [
   {
     title: "IBM Artificial Intelligence Fundamentals",
     issuer: "IBM",
-    date: "2025",
   },
   {
     title: "IBM Cybersecurity Fundamentals",
     issuer: "IBM",
-    date: "2025",
   },
   {
     title: "IBM Project Management Fundamentals",
     issuer: "IBM",
-    date: "2025",
   },
 ];
 
@@ -63,10 +60,6 @@ export default function CertificatesSection() {
               <h3 className="mb-4 text-xl font-semibold">
                 {certificate.title}
               </h3>
-
-              <p className="mb-8 text-zinc-400">
-                Completed in {certificate.date}
-              </p>
 
               <button className="flex items-center gap-2 rounded-xl border border-white/10 px-5 py-3 transition hover:border-white">
 

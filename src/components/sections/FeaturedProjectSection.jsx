@@ -34,7 +34,7 @@ const projects = [
     title: "Student Portal",
     category: "Java",
     description:
-      "University management portal with authentication.",
+      "University management portal with authentication using Java, Servlets, and MySQL.",
     tech: ["Java", "Servlets", "MySQL"],
     image: studentPortalImage,
   },

@@ -4,7 +4,6 @@ import {
   Smartphone,
   ArrowUpRight,
 } from "lucide-react";
-import GithubIcon from "../icons/GithubIcon";
 import yanaShot from "../../assets/images/projects/yana_shot.png"; // adjust filename/path to match your actual asset
 
 export default function FeaturedProject() {
@@ -64,7 +63,7 @@ export default function FeaturedProject() {
             </h3>
 
             <p className="mb-10 leading-8 text-zinc-400">
-              YANA is a mental wellness platform designed to make emotional support more accessible through anonymous conversations, AI-powered assistance and verified mental health professionals. Built with modern web technologies, the platform focuses on privacy, accessibility, and meaningful human connection.
+              YANA is a mental wellness platform designed to make emotional support more accessible through anonymous conversations, AI-powered assistance, and verified mental health professionals. Built with modern web technologies, the platform focuses on privacy, accessibility, and meaningful human connection.
             </p>
 
             {/* Features */}
@@ -143,17 +142,6 @@ export default function FeaturedProject() {
 
               </a>
 
-              <a
-                href="https://github.com/Code-id70?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-xl border border-white/10 px-6 py-4 transition hover:border-white"
-              >
-                GitHub
-
-                <GithubIcon size={18} />
-
-              </a>
 
             </div>
 

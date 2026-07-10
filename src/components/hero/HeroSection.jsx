@@ -20,25 +20,16 @@ export default function HeroSection() {
     >
       {/* ------------------------------------------------------
           Background cover image
-          NOTE: this image was imported in your original file
-          but never rendered anywhere. I've wired it in here as
-          a low-opacity full-bleed background layer since your
-          spec explicitly lists "Contains the background image"
-          under HeroSection's responsibilities. It sits behind
-          everything else (placed first in the DOM = lowest in
-          the stacking order). If you don't want it visible,
-          just delete this block or drop the opacity to 0.
+          pointer-events-none so it never blocks clicks on the
+          content that sits above it.
       ------------------------------------------------------- */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+        className="absolute inset-0 pointer-events-none bg-cover bg-center opacity-10"
         style={{ backgroundImage: `url(${backgroundCover})` }}
       ></div>
 
       {/* ------------------------------------------------------
           Main responsive container
-          Two columns on desktop (md:flex-row), stacked on mobile.
-          Same position/order as your original markup so stacking
-          behavior relative to the blur glows below is unchanged.
       ------------------------------------------------------- */}
       <div className="relative flex w-full max-w-7xl flex-col items-center gap-16 px-6 pt-32 md:flex-row">
         <HeroLeft />
@@ -46,9 +37,14 @@ export default function HeroSection() {
 
       {/* ------------------------------------------------------
           Ambient blur glows
-          Purely decorative, unchanged from your original code.
+          IMPORTANT: this div is `absolute inset-0` — it covers
+          the ENTIRE section and sits after the content in the
+          DOM, so without pointer-events-none it silently
+          intercepts every click/hover on the buttons above it,
+          even though it's visually invisible (just two blurred
+          circles with no background of its own).
       ------------------------------------------------------- */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-20 top-20 h-72 w-72 rounded-full bg-blue-500/10 blur-[140px]"></div>
         <div className="absolute bottom-20 right-20 h-96 w-96 rounded-full bg-indigo-500/10 blur-[180px]"></div>
       </div>

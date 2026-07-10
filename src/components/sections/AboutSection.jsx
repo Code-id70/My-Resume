@@ -55,17 +55,8 @@ export default function AboutSection() {
 
               </div>
 
-              <h3 className="mb-4 text-3xl font-bold">
-                Wanga Thagwana
-              </h3>
-
               <p className="leading-8 text-zinc-400">
-                I'm Wanga Thagwana, a Software Developer and founder of YANA, passionate about building technology that solves meaningful problems. My interests span software engineering, artificial intelligence, and SaaS, with a focus on creating products that are scalable, practical, and user-centered<br />
-        
-                I enjoy turning ideas into modern digital products that are
-                scalable, user-friendly and built with purpose. My goal is to
-                combine software engineering, AI and business thinking to create
-                technology that genuinely improves how people and businesses work.
+               I am a Software Developer and the founder of YANA, passionate about engineering technology that addresses meaningful human and business needs. My expertise spans full‑stack software development, artificial intelligence, and SaaS architectures. I focus on transforming complex ideas into modern, scalable, and user‑centered digital products. By combining technical execution with business thinking, my goal is to build intelligent systems that genuinely improve how people live and work.
               </p>
 
             </div>
@@ -109,9 +100,7 @@ export default function AboutSection() {
               </h3>
 
               <p className="text-zinc-400">
-                Exploring artificial intelligence,
-                automation and intelligent software
-                systems that transform business processes and more efficient.
+                Integrating artificial intelligence, automation, and intelligent workflows into software systems to optimize operational efficiency.
               </p>
 
             </div>
@@ -130,7 +119,7 @@ export default function AboutSection() {
               </h3>
 
               <p className="text-zinc-400">
-                Founder of YANA, passionate about designing and building software products that solve real-world problems through thoughtful design, modern technologies and user-focused experiences.
+               Building platforms like YANA from the ground up, utilizing thoughtful UI/UX design, modern tech stacks, and user-focused engineering.
               </p>
 
             </div>

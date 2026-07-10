@@ -22,7 +22,7 @@ export default function SkillsSection() {
         </p>
 
         <h2 className="mb-6 text-center text-4xl font-bold md:text-5xl">
-          Technologies i Work With
+          Technologies I Work With
         </h2>
 
         <p className="mx-auto mb-20 max-w-3xl text-center text-lg leading-8 text-zinc-400">

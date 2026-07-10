@@ -4,10 +4,10 @@ const experiences = [
   {
     company: "Delicate Courier",
     role: "Junior Technical Operations Intern",
-    period: "May 2026 – Present · 3 mos",
+    period: "May 2026 – July 2026 · 3 mos",
     location: "Pretoria, Gauteng, South Africa · Hybrid",
     description:
-      "Working as part of the technical operations team, supporting the development, maintenance and day-to-day operation of production systems used in logistics and e-commerce. Monitoring and troubleshooting production systems and APIs, supporting integrations between customer platforms and courier systems, and investigating technical issues affecting business operations. Testing new features, validating system functionality before deployment, and collaborating with developers to identify bugs and improve reliability. Researching business requirements to support software solutions for clients, assisting with technical documentation and process improvement, and contributing to lead research on businesses that could benefit from custom software and automation.",
+      "I supported live e‑commerce and logistics systems through maintenance, troubleshooting, and API monitoring. Took ownership of testing new features, resolving bugs, and improving reliability. Assisted with documentation and researched client requirements to design custom solutions. Additionally developed full‑stack projects, including a web‑based quote generator platform with automated PDF output.",
     skills: [
       "API Integrations",
       "Production Support",
@@ -21,7 +21,7 @@ const experiences = [
     period: "Jan 2026 – Feb 2026 · 2 mos",
     location: "Remote",
     description:
-      "Selected for the Prompt Engineering Internship under the Future Interns Fellowship Program. Gained hands-on experience in prompt design, optimization, and applied AI workflows through structured, industry-aligned tasks and real-world projects. Responsibilities included designing and testing effective prompts, documenting workflows, maintaining a GitHub repository for task submissions, and applying AI concepts to practical problem-solving scenarios — successfully completing assigned deliverables within strict timelines while adhering to professional and program guidelines.",
+      "I gained hands‑on experience in prompt design and AI workflows. Designed and tested effective prompts, documented processes, and maintained a GitHub repository for project submissions. Applied AI concepts to real‑world problem solving under strict timelines.",
     skills: [
       "Prompt Engineering",
       "Artificial Intelligence (AI)",
@@ -39,7 +39,7 @@ const experiences = [
     period: "Feb 2025 – Nov 2025 · 10 mos",
     location: "Pretoria, Gauteng, South Africa · On-site",
     description:
-      "Led a small team during a final-year software development project, coordinating tasks and supporting the delivery of the system from concept through testing. Responsibilities included assisting with project planning, task allocation, and progress tracking, while ensuring clear communication between team members. Actively contributed to development, debugging, and testing phases, and helped resolve technical blockers as they arose — strengthening leadership, collaboration, and problem-solving skills, as well as understanding of Agile principles, team-based development, and structured project execution in an academic setting.",
+      "I led a small team through planning, task allocation, and delivery of a software project. Contributed to development, debugging, and testing phases while strengthening leadership, collaboration, and Agile project management skills.",
     skills: [
       "Agile Project Management",
       "Team Leadership",
@@ -54,7 +54,7 @@ const experiences = [
     period: "Mar 2025 – Oct 2025 · 8 mos",
     location: "Pretoria, Gauteng, South Africa · On-site",
     description:
-      "Tutored students in Python and Web Technologies, covering syntax, loops, functions, and object-oriented programming (OOP). Developed and delivered hands-on coding exercises and mini-projects to enhance understanding of programming and web development concepts. Provided academic support in Information Systems, including practical guidance on Microsoft Word, Excel, and PowerPoint. Assisted students with assignments and coding challenges, helping them build confidence and improve their problem-solving skills, while fostering a supportive and engaging learning environment.",
+      "Tutored students in Python and Web Technologies with practical coding exercises. Provided academic support in Information Systems and helped students improve confidence, problem‑solving, and technical skills.",
     skills: [
       "Python (Programming Language)",
       "Information Systems",
