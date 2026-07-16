@@ -37,6 +37,5 @@ Explore the full portfolio here:
 https://wangasportfolio.netlify.app
 
 Contact:
-Email: thagwanawm88@gmail.com
 LinkedIn: https://www.linkedin.com/in/wanga-thagwana/  
 GitHub: https://github.com/Code-id70
