@@ -1,16 +1,42 @@
-# React + Vite
+Developer Portfolio
+===================
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository showcases a collection of projects that demonstrate practical applications of modern
+web development, technical operations, and software engineering. Each project highlights different
+technologies, problem‑solving approaches, and design principles.
 
-Currently, two official plugins are available:
+Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Rock Paper Scissors  
+A modern browser game built with HTML, CSS, and JavaScript. Features include responsive design,
+keyboard shortcuts, auto‑play mode, score persistence with Local Storage, and a live scoreboard.
 
-## React Compiler
+Richfield Connect  
+A student‑focused platform developed to improve communication and 
+engagement within the academic community. Designed to streamline information
+sharing and foster collaboration among students and faculty.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies Used:
+Frontend: HTML5, CSS3, JavaScript, React.js, React Native
+Backend: Python, Django, REST APIs
+Databases: MySQL, PostgreSQL
+Tools: Git, GitHub, Docker, Postman, Visual Studio Code
 
-## Expanding the ESLint configuration
+Certifications:
+Projects are supported by knowledge gained through certifications such as:
+-> IBM Web Development Fundamentals
+-> Cisco Python Essentials 1
+-> IBM Cloud Computing Fundamentals
+-> IBM AI for Business Professionals
+-> HP LIFE Agile Project Management
+-> HP LIFE Introduction to Cybersecurity Awareness
+-> WeThinkCode Generative AI Fundamentals
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Live Portfolio:
+Explore the full portfolio here:
+https://wangasportfolio.netlify.app
+
+Contact:
+Email: thagwanawm88@gmail.com
+LinkedIn: https://www.linkedin.com/in/wanga-thagwana/  
+GitHub: https://github.com/Code-id70
