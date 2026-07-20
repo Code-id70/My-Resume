@@ -1,6 +1,4 @@
 import {
-  Mail,
-  Phone,
   MapPin,
 } from "lucide-react";
 import GithubIcon from "../icons/GithubIcon";     // adjust relative path to match your folder structure
@@ -44,50 +42,6 @@ export default function ContactSection() {
 
               <div className="flex items-center gap-4">
 
-                <Mail className="text-blue-500" />
-
-                <div>
-
-                  <h3 className="font-semibold">
-                    Email
-                  </h3>
-
-                  <p className="text-zinc-400">
-                    thagwanawm88@gmail.com
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-6">
-
-              <div className="flex items-center gap-4">
-
-                <Phone className="text-blue-500" />
-
-                <div>
-
-                  <h3 className="font-semibold">
-                    Phone
-                  </h3>
-
-                  <p className="text-zinc-400">
-                    +27 82 085 0042
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-6">
-
-              <div className="flex items-center gap-4">
-
                 <MapPin className="text-blue-500" />
 
                 <div>
@@ -97,7 +51,7 @@ export default function ContactSection() {
                   </h3>
 
                   <p className="text-zinc-400">
-                    Pretoria, Gauteng, South Africa
+                    Gauteng, South Africa
                   </p>
 
                 </div>

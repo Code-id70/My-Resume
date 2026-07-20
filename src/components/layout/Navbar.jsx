@@ -1,4 +1,4 @@
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -7,8 +7,6 @@ export default function Navbar() {
   const links = [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Certificates", href: "#certificates" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -41,14 +39,6 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Button */}
-        <a
-          href="/W_THAGWANA_CV.pdf"
-          download
-          className="hidden items-center gap-2 rounded-xl bg-white px-5 py-2 text-sm font-medium text-black transition hover:bg-zinc-200 md:flex"
-        >
-          <Download size={16} />
-          Download CV
-        </a>
 
         {/* Mobile Button */}
         <button
@@ -76,16 +66,6 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-
-            <a
-              href="/W THAGWANA CV.pdf"
-              download
-              className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-white py-3 font-medium text-black"
-            >
-              <Download size={18} />
-              Download CV
-            </a>
-
           </div>
 
         </div>

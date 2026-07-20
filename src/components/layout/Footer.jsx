@@ -36,10 +36,6 @@ export default function Footer() {
               Projects
             </a>
 
-            <a href="#certificates" className="hover:text-blue-400">
-              Certifications
-            </a>
-
           </div>
 
         </div>

@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 // ============================================================
 // HeroLeft
@@ -9,7 +9,6 @@ import { ArrowRight, Download } from "lucide-react";
 //   - Greeting text
 //   - Name heading
 //   - Headline/subheading
-//   - CTA buttons (View Projects, Download CV)
 // ============================================================
 export default function HeroLeft() {
   return (
@@ -50,19 +49,11 @@ export default function HeroLeft() {
         <a
           href="https://github.com/Code-id70"
           target="_blank"
+          rel="noopener noreferrer"
           className="flex cursor-pointer items-center gap-2 rounded-xl bg-[#1a1a1a] px-6 py-4 font-semibold transition hover:bg-blue-700"
         >
           View Projects
           <ArrowRight size={18} />
-        </a>
-
-        <a
-          href="/W_THAGWANA_CV.pdf"
-          download
-          className="flex cursor-pointer items-center gap-2 rounded-xl border border-zinc-700 px-6 py-4 transition hover:border-white"
-        >
-          <Download size={18} />
-          Download CV
         </a>
 
       </div>

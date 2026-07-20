@@ -56,9 +56,8 @@ export default function AboutSection() {
               </div>
 
               <p className="leading-8 text-zinc-400">
-               I am a Software Developer and the founder of YANA, passionate about engineering technology that addresses meaningful human and business needs. My expertise spans full‑stack software development, artificial intelligence, and SaaS architectures. I focus on transforming complex ideas into modern, scalable, and user‑centered digital products. By combining technical execution with business thinking, my goal is to build intelligent systems that genuinely improve how people live and work.
+              I am a Software Developer and the founder of YANA, an AI-powered mental wellness platform. I specialize in full-stack development, artificial intelligence, and SaaS applications, with a passion for building technology that solves meaningful human and business challenges. I enjoy transforming complex ideas into modern, scalable, and user-centered digital products. By combining technical problem-solving with business thinking, I strive to create intelligent software that delivers real value for people and organizations. 
               </p>
-
             </div>
 
           </div>
